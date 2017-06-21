@@ -1,0 +1,4 @@
+package: git.rabobank.nl/happy-endpoint
+import:
+- package: github.com/gorilla/mux
+  version: v1.4.0
