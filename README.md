@@ -1,15 +1,17 @@
-# Azure Active Directory Authentication
+# Happy endpoint
 
-Using OAuth2
+This GoLang mini-project creates a binary file that returns a JSON object with a simple `Hello Wolrd!` message.
+
+I use this `happy-endpoint` project to verify the correct working of my infrastructure.
 
 ## Usage
 
 Download:
 
 ```
-mkdir $GOPATH/src/git.rabobank.nl/spn-rotation-tool
-cd $GOPATH/src/git.rabobank.nl/spn-rotation-tool
-git clone https://potebbb@git.rabobank.nl/scm/~potebbb/spn-rotation-tool.git
+mkdir $GOPATH/src/github.com/egbertp/happy-endpoint
+cd $GOPATH/src/github.com/egbertp/happy-endpoint
+git clone https://github.com/egbertp/happy-endpoint.git
 ```
 
 ### Build and Run
@@ -25,17 +27,21 @@ Build the binary
 $ make build
 ```
 
-Run the app
-```
-$ ./spn-rotation-app
-```
-
 Release the app
-``` 
+```
 $ make release
 ```
 
+Run the app
+```
+$ ./happy-endpoint
+```
 
 ### Use tha app
 
-Point your browser to `http://localhost:7000/AzureLogin`
+Point your browser to `http://localhost:7000/`
+```
+{
+	message: "Hello world"
+}
+```
