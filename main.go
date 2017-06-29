@@ -2,8 +2,8 @@ package main
 
 import (
 	"flag"
-	"git.rabobank.nl/happy-endpoint/handlers"
-	"git.rabobank.nl/happy-endpoint/helpers"
+	"github.com/egbertp/happy-endpoint/handlers"
+	"github.com/egbertp/happy-endpoint/helpers"
 	"github.com/gorilla/mux"
 	"log"
 	"net/http"
